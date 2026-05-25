@@ -25,3 +25,4 @@ function activateContact() {
     document.getElementById("guess-input").style.display = "block";
     document.getElementById("submit-btn").style.display = "block";
 }
+console.log("hello world");
