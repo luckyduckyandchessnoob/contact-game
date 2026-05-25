@@ -1,0 +1,58 @@
+h1 {
+    color: rgb(99, 79, 162);
+    font-size: 96px;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(216, 210, 231);
+    height: 150px;
+    margin: 0;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+#guess-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: rgb(178, 167, 211);
+    font-size: 64px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin-top: 250px;
+}
+
+input {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 0;
+}
