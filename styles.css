@@ -22,6 +22,8 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    align-items: center;
+    gap: 20px;
 }
 
 button {
@@ -34,6 +36,7 @@ button {
   font-variation-settings:
     "wdth" 100;
     margin-top: 250px;
+    width: auto;
 }
 
 input {
@@ -44,6 +47,7 @@ input {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    width: auto;
 }
 
 body {
