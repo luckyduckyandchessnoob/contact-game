@@ -22,6 +22,7 @@ getWord().then(word => {
 
 function activateContact() {
     document.getElementById("contact-btn").style.display = "none";
-    document.getElementById("guess-input").style.display = "block";
+    document.getElementById("guess-text-1").style.display = "block";
+    document.getElementById("guess-input-1").style.display = "block";
     document.getElementById("submit-btn").style.display = "block";
 }
