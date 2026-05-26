@@ -25,10 +25,10 @@ h1 {
 .guess-container {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 75px;
 }
 
 button {
