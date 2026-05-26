@@ -20,11 +20,11 @@ getWord().then(word => {
 function activateContact() {
     // show guess input for player 1
     document.getElementById("contact-btn").style.display = "none";
-    document.getElementById("guess-1").style.display = "block";
+    document.getElementById("guess-1").style.display = "flex";
     document.getElementById("submit-btn-1").addEventListener("click", () => {
         const guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
         document.getElementById("guess-1").style.display = "none";
-        document.getElementById("guess-2").style.display = "block";
+        document.getElementById("guess-2").style.display = "flex";
     });
 
     document.getElementById("guess-input-1").addEventListener("keydown", (event) => {
