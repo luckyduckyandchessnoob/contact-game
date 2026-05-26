@@ -18,18 +18,28 @@ getWord().then(word => {
 });
 
 function activateContact() {
+    // show guess input for player 1
     document.getElementById("contact-btn").style.display = "none";
     document.getElementById("guess-1").style.display = "block";
     document.getElementById("submit-btn-1").addEventListener("click", () => {
-        const guessInput1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
+        const guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
         document.getElementById("guess-1").style.display = "none";
         document.getElementById("guess-2").style.display = "block";
-        const guessInput2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
     });
 
-    document.querySelector(".guess-input").addEventListener("keydown", (event) => {
+    document.getElementById("guess-input-1").addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
             document.getElementById("submit-btn-1").click();
+        }
+    });
+
+    // show guess input for player 2
+    document.getElementById("submit-btn-2").addEventListener("click", () => {
+        const guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
+    });
+    document.getElementById("guess-input-2").addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            document.getElementById("submit-btn-2").click();
         }
     });
 }
