@@ -66,6 +66,6 @@ body {
     overflow: hidden;
 }
 
-#guess-text-1, #guess-text-2, #guess-input-1, #guess-input-2, .submit-btn {
+#guess-1, #guess-2{
     display: none;
 }
