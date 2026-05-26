@@ -22,7 +22,7 @@ function activateContact() {
     document.getElementById("guess-text-1").style.display = "block";
     document.getElementById("guess-input-1").style.display = "block";
     document.getElementById("submit-btn-1").style.display = "block";
-    submitBtn.addEventListener("click", () => {
+    document.getElementById("submit-btn-1").addEventListener("click", () => {
         const guessInput1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
         
         document.getElementById("guess-text-1").style.display = "none";
@@ -38,7 +38,7 @@ function activateContact() {
 
     input1.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
-            document.querySelector(".submit-btn-1").click();
+            document.getElementById("#submit-btn-1").click();
         }
     });
 }
