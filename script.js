@@ -1,7 +1,10 @@
 document.getElementById("contact-btn").addEventListener("click", activateContact);
 let secretWord = document.getElementById("secret-word");
-document.getElementById("guess-input").style.display = "none";
+document.getElementById("guess-input-1").style.display = "none";
+document.getElementById("guess-input-2").style.display = "none";
 document.getElementById("submit-btn").style.display = "none";
+document.getElementById("guess-text-1").style.display = "none";
+document.getElementById("guess-text-2").style.display = "none";
 
 function getWord() {
     return fetch("words.json")
