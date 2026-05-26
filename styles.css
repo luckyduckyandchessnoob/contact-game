@@ -65,6 +65,6 @@ body {
     margin: 0;
 }
 
-#guess-text-1, #guess-text-2, #guess-input-1, #guess-input-2, #submit-btn {
+#guess-text-1, #guess-text-2, #guess-input-1, #guess-input-2, .submit-btn {
     display: none;
 }
