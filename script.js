@@ -1,4 +1,3 @@
-document.getElementById("contact-btn").addEventListener("click", activateContact);
 let secretWord = document.getElementById("secret-word");
 
 function getWord() {
