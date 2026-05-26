@@ -22,7 +22,7 @@ h1 {
     margin-top: 250px;
 }
 
-#guess-container {
+.guess-container {
     display: flex;
     justify-content: center;
     margin-top: 50px;
