@@ -1,5 +1,4 @@
 let secretWord = document.getElementById("secret-word");
-document.getElementById("contact-btn").addEventListener("click", activateContact);
 
 function getWord() {
     return fetch("words.json")
