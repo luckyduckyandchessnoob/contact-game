@@ -57,7 +57,7 @@ function activateContact() {
         }
         else {
             results += "✅";
-            secretWord.innerText = word[givenIndex] + "...";
+            secretWord.innerText = getWord()[givenIndex] + "...";
         }
     }
     else {
