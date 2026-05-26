@@ -63,6 +63,7 @@ body {
   font-variation-settings:
     "wdth" 100;
     margin: 0;
+    overflow: hidden;
 }
 
 #guess-text-1, #guess-text-2, #guess-input-1, #guess-input-2, .submit-btn {
