@@ -38,7 +38,7 @@ function activateContact() {
 
     input1.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
-            submitBtn.click();
+            document.querySelector(".submit-btn-1").click();
         }
     });
 }
