@@ -1,4 +1,6 @@
 let secretWord = document.getElementById("secret-word");
+let results = "";
+let givenIndex = 0;
 
 function getWord() {
     return fetch("words.json")
@@ -14,7 +16,7 @@ function getWord() {
 }
 
 getWord().then(word => {
-    secretWord.innerText = word[0] + "...";
+    secretWord.innerText = word[givenIndex] + "...";
 });
 
 function activateContact() {
@@ -42,4 +44,24 @@ function activateContact() {
             document.getElementById("submit-btn-2").click();
         }
     });
+
+    // compare guesses
+    if (guess1 === guess2) {
+        if (guess1 === secretWord.innerText) {
+            results += "🎉}";
+            console.log(results);
+        }
+        else {
+            results += "✅";
+            secretWord.innerText = word[givenIndex] + "...";
+        }
+    }
+    else {
+        results += "❌";
+    }
+
+    document.getElementById("guess-2").style.display = "none";
+    if (guess1 != secretWord.innerText) {
+        document.getElementById("contact-btn").style.display = "block";
+    }
 }
