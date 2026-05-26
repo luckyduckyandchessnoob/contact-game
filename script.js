@@ -1,6 +1,7 @@
 let secretWord = document.getElementById("secret-word");
 let results = "";
 let givenIndex = 0;
+console.log(".");
 
 function getWord() {
     return fetch("words.json")
@@ -38,6 +39,7 @@ function activateContact() {
     // show guess input for player 2
     document.getElementById("submit-btn-2").addEventListener("click", () => {
         const guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
+        document.getElementById("guess-2").style.display = "none";
     });
     document.getElementById("guess-input-2").addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
