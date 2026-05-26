@@ -1,6 +1,8 @@
 let secretWord = document.getElementById("secret-word");
 let results = "";
 let givenIndex = 0;
+let guess1 = "";
+let guess2 = "";
 console.log(".");
 
 function getWord() {
@@ -25,7 +27,7 @@ function activateContact() {
     document.getElementById("contact-btn").style.display = "none";
     document.getElementById("guess-1").style.display = "flex";
     document.getElementById("submit-btn-1").addEventListener("click", () => {
-        const guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
+        guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
         document.getElementById("guess-1").style.display = "none";
         document.getElementById("guess-2").style.display = "flex";
     });
@@ -38,7 +40,7 @@ function activateContact() {
 
     // show guess input for player 2
     document.getElementById("submit-btn-2").addEventListener("click", () => {
-        const guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
+        guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
         document.getElementById("guess-2").style.display = "none";
     });
     document.getElementById("guess-input-2").addEventListener("keydown", (event) => {
