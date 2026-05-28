@@ -1,9 +1,8 @@
-let secretWord = document.getElementById("secret-word");
+let secretWord = document.getElementById("secret-word").innerText;
 let results = "";
 let givenIndex = 0;
 let guess1 = "";
 let guess2 = "";
-console.log(".");
 
 function getWord() {
     return fetch("words.json")
@@ -19,7 +18,7 @@ function getWord() {
 }
 
 getWord().then(word => {
-    secretWord.innerText = word[givenIndex] + "...";
+    secretWord = word[givenIndex] + "...";
 });
 
 function activateContact() {
@@ -57,7 +56,7 @@ function activateContact() {
         }
         else {
             results += "✅";
-            secretWord.innerText = getWord()[givenIndex] + "...";
+            secretWord = getWord()[givenIndex] + "...";
         }
     }
     else {
