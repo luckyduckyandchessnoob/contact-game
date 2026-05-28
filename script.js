@@ -1,8 +1,4 @@
-let secretWord = document.getElementById("secret-word").innerText;
-let results = "";
-let givenIndex = 0;
-let guess1 = "";
-let guess2 = "";
+let secretWord = document.getElementById("secret-word");
 
 function getWord() {
     return fetch("words.json")
@@ -18,7 +14,7 @@ function getWord() {
 }
 
 getWord().then(word => {
-    secretWord = word[givenIndex] + "...";
+    secretWord.innerText = word[0] + "...";
 });
 
 function activateContact() {
@@ -26,7 +22,7 @@ function activateContact() {
     document.getElementById("contact-btn").style.display = "none";
     document.getElementById("guess-1").style.display = "flex";
     document.getElementById("submit-btn-1").addEventListener("click", () => {
-        guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
+        const guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
         document.getElementById("guess-1").style.display = "none";
         document.getElementById("guess-2").style.display = "flex";
     });
@@ -39,32 +35,11 @@ function activateContact() {
 
     // show guess input for player 2
     document.getElementById("submit-btn-2").addEventListener("click", () => {
-        guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
-        document.getElementById("guess-2").style.display = "none";
+        const guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
     });
     document.getElementById("guess-input-2").addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
             document.getElementById("submit-btn-2").click();
         }
     });
-
-    // compare guesses
-    if (guess1 === guess2) {
-        if (guess1 === secretWord.innerText) {
-            results += "🎉}";
-            console.log(results);
-        }
-        else {
-            results += "✅";
-            secretWord = getWord()[givenIndex] + "...";
-        }
-    }
-    else {
-        results += "❌";
-    }
-
-    document.getElementById("guess-2").style.display = "none";
-    if (guess1 != secretWord.innerText) {
-        document.getElementById("contact-btn").style.display = "block";
-    }
 }
