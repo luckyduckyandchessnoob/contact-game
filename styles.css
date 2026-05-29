@@ -66,6 +66,6 @@ body {
     overflow: hidden;
 }
 
-.guess-container {
+.guess-container, #results-container {
     display: none;
 }

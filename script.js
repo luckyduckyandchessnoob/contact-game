@@ -1,4 +1,3 @@
-console.log("activatecontact");
 let secretWord = document.getElementById("secret-word");
 let guess1 = "";
 let guess2 = "";
@@ -37,8 +36,9 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     if (guess1 === guess2) {
         // win
         if (guess1 === word) {
-            results += "🎉"
+            results += "🎉";
             secretWord.innerText = "Results: " + results;
+            document.getElementById("results-container").style.display = "block";
         }
         // get another letter
         else {
@@ -55,11 +55,11 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     else {
         results += "❌";
     }
-    if (guess1 !== word) {
+    if (results[results.length - 1] != "🎉") {
         document.getElementById("contact-btn").style.display = "block";
-        document.getElementById("guess-input-1").value = "";
-        document.getElementById("guess-input-2").value = "";
     }
+    document.getElementById("guess-input-1").value = "";
+    document.getElementById("guess-input-2").value = "";
 });
 
 document.getElementById("guess-input-2").addEventListener("keydown", (event) => {
@@ -77,4 +77,12 @@ function activateContact() {
         document.getElementById("guess-1").style.display = "none";
         document.getElementById("guess-2").style.display = "flex";
     };
+}
+
+function copyResults() {
+    navigator.clipboard.writeText(results).then(() => {
+        document.getElementById("copy-btn").innerText = "Copied!";
+    }).catch(err => {
+        document.getElementById("copy-btn").innerText = "Try again";
+    });
 }
