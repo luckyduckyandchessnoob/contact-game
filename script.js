@@ -32,30 +32,25 @@ document.getElementById("guess-input-1").addEventListener("keydown", (event) => 
 document.getElementById("submit-btn-2").addEventListener("click", () => {
     guess2 = document.getElementById("guess-input-2").value.trim().toUpperCase();
     document.getElementById("guess-2").style.display = "none";
-    // compare guesses
-    if (guess1 === guess2) {
-        // win
-        if (guess1 === word) {
-            results += "🎉";
-            secretWord.innerText = "Results: " + results;
-            document.getElementById("results-container").style.display = "block";
-        }
-        // get another letter
-        else {
+    
+    // win
+     if (guess1 === word && guess2 === word) {
+        results += "🎉";
+        secretWord.innerText = "Results: " + results;
+        document.getElementById("results-container").style.display = "block";
+    }
+    // match
+    else if (guess1 === guess2) {
             results += "✅";
             wordIndex++;
             secretWord.innerText = word.slice(0, wordIndex) + "...";
-            // if they got to the end
-            if (wordIndex >= word.length) {
-                secretWord.innerText = "Results: " + results;
-            }
-        }
     }
-    // another round
+    // not a match
     else {
         results += "❌";
     }
-    if (results[results.length - 1] != "🎉") {
+    // another round
+    if (results[results.length - 1] !== "🎉") {
         document.getElementById("contact-btn").style.display = "block";
     }
     document.getElementById("guess-input-1").value = "";
