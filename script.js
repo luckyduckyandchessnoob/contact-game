@@ -1,8 +1,9 @@
+console.log("a");
 let secretWord = document.getElementById("secret-word");
 let guess1 = "";
 let guess2 = "";
 let results = "";
-let wordIndex = 0;
+let wordIndex = 1;
 let word = "";
 
 function getWord() {
