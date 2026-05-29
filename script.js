@@ -50,7 +50,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
         results += "❌";
     }
     // another round
-    if (guess1 !== word) {
+    if (guess1 !== word || guess2 !== word) {
         document.getElementById("contact-btn").style.display = "block";
     }
     document.getElementById("guess-input-1").value = "";
