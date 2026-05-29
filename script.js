@@ -3,6 +3,7 @@ let guess1 = "";
 let guess2 = "";
 let results = "";
 let wordIndex = 0;
+let word = "";
 
 function getWord() {
     return fetch("words.json")
@@ -12,7 +13,7 @@ function getWord() {
         .then(words => {
             let date = new Date();
             let today = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-            let word = words[today].toUpperCase();
+            word = words[today].toUpperCase();
             return word;
         });
 }
