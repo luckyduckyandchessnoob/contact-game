@@ -1,4 +1,4 @@
-console.log("a");
+console.log("activatecontact");
 let secretWord = document.getElementById("secret-word");
 let guess1 = "";
 let guess2 = "";
