@@ -1,5 +1,5 @@
 # Contact! Digital version
-The original game Contact! is a folk game for three or more players. One player is the wordmaster, and the other players try to guess the word by giving each other possible clues. This is the digital version of the game for two or more players. Come back daily for a new word!
+The original game Contact! is a folk game for three or more players. One player is the wordmaster, and the other players try to guess the word by giving each other possible clues. This is the digital version of the game for two or more players. Come back daily for a new word! (Using a computer is highly recommended.)
 ## How to 
 The goal of the game is to reveal the secret word. The secret word is always 6–8 letters.
 1. The first letter of the secret word will be revealed at the top of the screen. The players say any clue for a word that starts with that letter.
