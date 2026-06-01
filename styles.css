@@ -71,3 +71,13 @@ body {
 .guess-container, #results-container {
     display: none;
 }
+
+#results-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+    flex-direction: column;
+    gap: 75px;
+    font-size: 64px;
+}

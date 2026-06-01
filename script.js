@@ -53,7 +53,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     }
     // another round
     if (guess1 !== word || guess2 !== word) {
-        document.getElementById("contact-container").style.display = "block";
+        document.getElementById("contact-container").style.display = "flex";
     }
     document.getElementById("guess-input-1").value = "";
     document.getElementById("guess-input-2").value = "";
