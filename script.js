@@ -53,7 +53,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     }
     // another round
     if (guess1 !== word || guess2 !== word) {
-        document.getElementById("contact-btn").style.display = "block";
+        document.getElementById("contact-container").style.display = "block";
     }
     document.getElementById("guess-input-1").value = "";
     document.getElementById("guess-input-2").value = "";
@@ -67,7 +67,7 @@ document.getElementById("guess-input-2").addEventListener("keydown", (event) => 
 
 function activateContact() {
     // show guess input for player 1
-    document.getElementById("contact-btn").style.display = "none";
+    document.getElementById("contact-container").style.display = "none";
     document.getElementById("guess-1").style.display = "flex";
     document.getElementById("submit-btn-1").onclick = () => {
         guess1 = document.getElementById("guess-input-1").value.trim().toUpperCase();
