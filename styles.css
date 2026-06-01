@@ -16,6 +16,8 @@ h1 {
 #contact-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #contact-btn {

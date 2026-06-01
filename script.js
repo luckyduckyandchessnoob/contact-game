@@ -41,12 +41,14 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     }
     // match
     else if (guess1 === guess2) {
+            document.getElementById("result").innerText = "✅";
             results += "✅";
             wordIndex++;
             secretWord.innerText = word.slice(0, wordIndex) + "...";
     }
     // not a match
     else {
+        document.getElementById("result").innerText = "❌";
         results += "❌";
     }
     // another round
