@@ -71,7 +71,6 @@ body {
 }
 
 #results-container {
-    display: none;
     justify-content: center;
     margin-top: 150px;
     align-items: center;
