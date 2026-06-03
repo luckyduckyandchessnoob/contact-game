@@ -38,7 +38,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
         results += "🎉";
         secretWord.innerText = word;
         document.getElementById("results-container").style.display = "flex";
-        document.getElementById("results-key").innerText = results + "\n\nResults key:\n🎉: word was revealed\n✅: guesses matched\n❌: guesses did not match";
+        document.getElementById("results-key").innerText = "Results: " + results + "\nResults key:\n🎉: word was revealed\n✅: guesses matched\n❌: guesses did not match";
     }
     // match
     else if (guess1 === guess2) {
