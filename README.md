@@ -15,3 +15,4 @@ The goal of the game is to reveal the secret word. The secret word is always 6�
 6. They and another player guess "lobster."
 7. The players guessed the right word and win!
 8. The results would be: "✅🎉".
+9. If you still don't get it, go [here] (https://www.scienceambassadorscholarship.org/pdfs/Contact-Rules.pdf) ignoring the "Defender" role.
