@@ -1,4 +1,4 @@
-# Contact! Digital version
+# Contact! daily word game
 The original game Contact! is a folk game for three or more players. One player is the wordmaster, and the other players try to guess the word by giving each other possible clues. This is the digital version of the game for two or more players. Come back daily for a new word! (Using a computer is highly recommended.)
 ## How to play
 The goal of the game is to reveal the secret word. The secret word is always 6–8 letters.
@@ -15,4 +15,4 @@ The goal of the game is to reveal the secret word. The secret word is always 6�
 6. They and another player guess "lobster."
 7. The players guessed the right word and win!
 8. The results would be: "✅🎉".
-9. If you still don't get it, go [here] (https://www.scienceambassadorscholarship.org/pdfs/Contact-Rules.pdf) ignoring the "Defender" role.
+9. If you still don't get it, go [here](https://www.scienceambassadorscholarship.org/pdfs/Contact-Rules.pdf) ignoring the "Defender" role.
