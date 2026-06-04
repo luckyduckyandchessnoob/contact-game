@@ -14,11 +14,13 @@ function getWord() {
             let date = new Date();
             let today = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
             word = words[today].toUpperCase();
-            return word;
+            let dates = Object.keys(words);
+            let wordIndex = dates.indexOf(today);
+            return { word, wordIndex };
         });
 }
 
-getWord().then(word => {
+getWord().then(({ word, wordIndex }) => {
     secretWord.innerText = word[0] + "...";
 });
 
@@ -38,7 +40,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
         results += "🎉";
         secretWord.innerText = word;
         document.getElementById("results-container").style.display = "flex";
-        document.getElementById("results-key").innerText = "Results:\nContact #" + words.indexOf(word) + "\n" + results + "\n\nResults key:\n✅: guesses matched\n❌: guesses did not match\n🎉: word was revealed";
+        document.getElementById("results-key").innerText = "Results:\nContact #" + (wordIndex + 1) + "\n" + results + "\n\nResults key:\n✅: guesses matched\n❌: guesses did not match\n🎉: word was revealed";
     }
     // match
     else if (guess1 === guess2) {
