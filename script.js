@@ -44,14 +44,14 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     }
     // match
     else if (guess1 === guess2) {
-            document.getElementById("result").innerText = "✅";
+            document.getElementById("result").innerText = guess1 +"✅";
             results += "✅";
             wordIndex++;
             secretWord.innerText = word.slice(0, wordIndex) + "...";
     }
     // not a match
     else {
-        document.getElementById("result").innerText = "❌";
+        document.getElementById("result").innerText = "Player 1's guess: " + guess1 + " \nPlayer 2's guess: " + guess2 + "\n❌";
         results += "❌";
     }
     // another round
