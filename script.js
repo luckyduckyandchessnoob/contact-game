@@ -37,7 +37,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     document.getElementById("guess-2").style.display = "none";
     
     // win
-     if (guess1 === word && guess2 === word) {
+     if ((guess1 === word && guess2 === word) || wordIndex === word.length - 1) {
         results += "🎉";
         secretWord.innerText = word;
         document.getElementById("results-container").style.display = "flex";
@@ -45,7 +45,7 @@ document.getElementById("submit-btn-2").addEventListener("click", () => {
     }
     // match
     else if (guess1 === guess2) {
-            document.getElementById("result").innerText = guess1 +"✅";
+            document.getElementById("result").innerText = guess1 + " ✅";
             results += "✅";
             wordIndex++;
             secretWord.innerText = word.slice(0, wordIndex) + "...";
