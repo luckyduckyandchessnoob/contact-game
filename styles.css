@@ -64,6 +64,7 @@ body {
     "wdth" 100;
     margin: 0;
     overflow: hidden;
+    text-align: center;
 }
 
 .guess-container, #results-container {
